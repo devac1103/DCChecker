@@ -1,4 +1,20 @@
+import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
-import App from './App';
+import { Provider } from 'react-redux';
 
-AppRegistry.registerComponent('DCChecker', () => App);
+import App from './src/index';
+import configureStore from './src/store/configure-store';
+
+const store = configureStore();
+
+export default class DCChecker extends Component {
+    render() {
+        return (
+            <Provider store={store}>
+                <App />
+            </Provider>
+        );
+    }
+}
+
+AppRegistry.registerComponent('DCChecker', () => DCChecker);
