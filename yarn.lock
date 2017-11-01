@@ -850,6 +850,10 @@ balanced-match@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
 
+base-64@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/base-64/-/base-64-0.1.0.tgz#780a99c84e7d600260361511c4877613bf24f6bb"
+
 base64-js@0.0.8:
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-0.0.8.tgz#1101e9544f4a76b1bc3b26d452ca96d7a35e7978"
@@ -1072,6 +1076,10 @@ clone@^1.0.0:
 co@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
+
+cocoa-lumberjack@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/cocoa-lumberjack/-/cocoa-lumberjack-3.0.3.tgz#6178b9f31bd156bece7a1549c9d4e1b298542812"
 
 code-point-at@^1.0.0:
   version "1.1.0"
@@ -1543,6 +1551,10 @@ fast-levenshtein@~2.0.4:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
 
+fast-plist@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/fast-plist/-/fast-plist-0.1.2.tgz#a45aff345196006d406ca6cdcd05f69051ef35b8"
+
 fb-watchman@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/fb-watchman/-/fb-watchman-2.0.0.tgz#54e9abf7dfa2f26cd9b1636c588c1afc05de5d58"
@@ -1562,7 +1574,7 @@ fbjs-scripts@^0.8.1:
     semver "^5.1.0"
     through2 "^2.0.0"
 
-fbjs@0.8.14, fbjs@^0.8.9:
+fbjs@0.8.14:
   version "0.8.14"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.14.tgz#d1dbe2be254c35a91e09f31f9cd50a40b2a0ed1c"
   dependencies:
@@ -1574,7 +1586,7 @@ fbjs@0.8.14, fbjs@^0.8.9:
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.9"
 
-fbjs@^0.8.16:
+fbjs@^0.8.16, fbjs@^0.8.9:
   version "0.8.16"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.16.tgz#5e67432f550dc41b572bf55847b8aca64e5337db"
   dependencies:
@@ -1962,6 +1974,12 @@ image-size@^0.6.0:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.6.1.tgz#98122a562d59dcc097ef1b2c8191866eb8f5d663"
 
+immutability-helper@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/immutability-helper/-/immutability-helper-2.4.0.tgz#00d421e2957c17f0f0781475f05ffd837e73458d"
+  dependencies:
+    invariant "^2.2.0"
+
 imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/imurmurhash/-/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
@@ -2018,7 +2036,7 @@ inquirer@^3.0.6:
     strip-ansi "^4.0.0"
     through "^2.3.6"
 
-invariant@^2.0.0, invariant@^2.2.2:
+invariant@^2.0.0, invariant@^2.2.0, invariant@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.2.tgz#9e1f56ac0acdb6bf303306f338be3b204ae60360"
   dependencies:
@@ -3312,7 +3330,7 @@ pinkie@^2.0.0:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
 
-plist@2.0.1:
+plist@2.0.1, plist@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/plist/-/plist-2.0.1.tgz#0a32ca9481b1c364e92e18dc55c876de9d01da8b"
   dependencies:
@@ -3366,7 +3384,14 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.6, prop-types@^15.5.8, prop-types@^15.5.9:
+prop-types@15.5.10:
+  version "15.5.10"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
+  dependencies:
+    fbjs "^0.8.9"
+    loose-envify "^1.3.1"
+
+prop-types@^15.5.10, prop-types@^15.5.6, prop-types@^15.5.8, prop-types@^15.6.0:
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
   dependencies:
@@ -3445,11 +3470,44 @@ react-devtools-core@^2.5.0:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
+react-native-animatable@^1.2.3:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/react-native-animatable/-/react-native-animatable-1.2.4.tgz#b5fb7657e8f6edadbc26697057a327fb920b3039"
+  dependencies:
+    prop-types "^15.5.10"
+
+react-native-background-fetch@~2.2.0:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/react-native-background-fetch/-/react-native-background-fetch-2.2.1.tgz#58eca4da671de857eef1446107ed5d29a0bca989"
+  dependencies:
+    fast-plist "^0.1.2"
+    plist "^2.0.1"
+    xcode "^0.9.1"
+
+react-native-background-geolocation@^2.9.4:
+  version "2.9.4"
+  resolved "https://registry.yarnpkg.com/react-native-background-geolocation/-/react-native-background-geolocation-2.9.4.tgz#048a45d3d9d0ca192421b5694ab118570c3ab9f7"
+  dependencies:
+    cocoa-lumberjack "^3.0.3"
+    react-native-background-fetch "~2.2.0"
+
 react-native-button@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/react-native-button/-/react-native-button-2.1.0.tgz#a39e23292922afeea4f7be141dd43e18f1b51876"
   dependencies:
     prop-types "^15.5.10"
+
+react-native-charts-wrapper@^0.2.10:
+  version "0.2.10"
+  resolved "https://registry.yarnpkg.com/react-native-charts-wrapper/-/react-native-charts-wrapper-0.2.10.tgz#39485a29e6c3f1e9c76bb134305664754d03f9df"
+
+react-native-circle-button@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/react-native-circle-button/-/react-native-circle-button-1.0.8.tgz#0a82a54d4082a7fd4afea2ebffd806537447ef22"
+
+react-native-circle-checkbox@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/react-native-circle-checkbox/-/react-native-circle-checkbox-0.1.3.tgz#5be5366e589011a08a0ea3a8b0d8f326498d49b1"
 
 react-native-dismiss-keyboard@1.0.0:
   version "1.0.0"
@@ -3467,33 +3525,27 @@ react-native-drawer-layout@1.3.2:
   dependencies:
     react-native-dismiss-keyboard "1.0.0"
 
-react-native-material-buttons@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/react-native-material-buttons/-/react-native-material-buttons-0.5.0.tgz#ab2b3e3fc3f500ca713f51e9d75978aff602152a"
-  dependencies:
-    prop-types "^15.5.9"
-    react-native-material-ripple "^0.7.0"
+react-native-file-picker@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/react-native-file-picker/-/react-native-file-picker-0.0.8.tgz#5f6d4fff9477d9fcf36b08bd26f8813e9943cdc1"
 
-react-native-material-dropdown@^0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/react-native-material-dropdown/-/react-native-material-dropdown-0.5.2.tgz#b5d70d6fe2628826a93b085b68385ec8e348bc2f"
+react-native-fs@^2.8.1:
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/react-native-fs/-/react-native-fs-2.8.1.tgz#029ac6d23331704db93735c3540ff795f5286566"
   dependencies:
-    prop-types "^15.5.9"
-    react-native-material-buttons "^0.5.0"
-    react-native-material-ripple "^0.7.0"
-    react-native-material-textfield "^0.10.0"
+    base-64 "^0.1.0"
+    utf8 "^2.1.1"
 
-react-native-material-ripple@^0.7.0:
-  version "0.7.5"
-  resolved "https://registry.yarnpkg.com/react-native-material-ripple/-/react-native-material-ripple-0.7.5.tgz#e2af5110680532f14aea3c3a438247be2ffef659"
-  dependencies:
-    prop-types "^15.5.10"
+react-native-maps@^0.17.1:
+  version "0.17.1"
+  resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.17.1.tgz#ab2236341fd984dac8864202ae55331bc262f60c"
 
-react-native-material-textfield@^0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/react-native-material-textfield/-/react-native-material-textfield-0.10.0.tgz#ee4bd429ea921bde1243d4bf13fb5106e33a0c99"
+react-native-modal@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-modal/-/react-native-modal-4.1.0.tgz#f9b7effdce1eaf74fe3135b549b2a341b431b2d7"
   dependencies:
-    prop-types "^15.5.9"
+    prop-types "15.5.10"
+    react-native-animatable "^1.2.3"
 
 react-native-router-flux@^4.0.0-beta.22:
   version "4.0.0-beta.22"
@@ -3507,11 +3559,35 @@ react-native-router-flux@^4.0.0-beta.22:
     react-native-button "^2.0.0"
     react-navigation "^1.0.0-beta.13"
 
+react-native-sensor-manager@^0.1.10:
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/react-native-sensor-manager/-/react-native-sensor-manager-0.1.10.tgz#c228280d67fddb668e715b4d7b823188de504da8"
+
+react-native-sensors@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/react-native-sensors/-/react-native-sensors-2.4.1.tgz#6307733b8db07b755c01b3978a7b7fc4a9b58578"
+  dependencies:
+    rxjs "^5.0.2"
+
+react-native-simple-radio-button@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/react-native-simple-radio-button/-/react-native-simple-radio-button-2.7.0.tgz#0ad7e9beda7650519ca7ae479ee94cf7facd7d4e"
+
+react-native-spinkit@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-spinkit/-/react-native-spinkit-1.1.1.tgz#3ae512f3978bc750b7c02639911e1710750d8539"
+  dependencies:
+    prop-types "^15.5.8"
+
 react-native-tab-view@^0.0.69:
   version "0.0.69"
   resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-0.0.69.tgz#f52d4354a98a382f10eb5fcf61db5216c91dc7e7"
   dependencies:
     prop-types "^15.5.8"
+
+react-native-view-shot@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-view-shot/-/react-native-view-shot-2.1.1.tgz#01d372a906bc71da8b0058c13f693f7ea33d6c31"
 
 react-native@0.49.3:
   version "0.49.3"
@@ -3894,6 +3970,12 @@ rx@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/rx/-/rx-4.1.0.tgz#a5f13ff79ef3b740fe30aa803fb09f98805d4782"
 
+rxjs@^5.0.2:
+  version "5.5.2"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.2.tgz#28d403f0071121967f18ad665563255d54236ac3"
+  dependencies:
+    symbol-observable "^1.0.1"
+
 safe-buffer@^5.0.1, safe-buffer@^5.1.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
@@ -4193,7 +4275,7 @@ supports-color@^4.0.0:
   dependencies:
     has-flag "^2.0.0"
 
-symbol-observable@^1.0.3:
+symbol-observable@^1.0.1, symbol-observable@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.0.4.tgz#29bf615d4aa7121bdd898b22d4b3f9bc4e2aa03d"
 
@@ -4365,6 +4447,10 @@ ultron@~1.1.0:
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
+
+utf8@^2.1.1:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/utf8/-/utf8-2.1.2.tgz#1fa0d9270e9be850d9b05027f63519bf46457d96"
 
 util-deprecate@1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
